@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider as MUIThemeProvider, CssBaseline } from '@mui/material';
-import theme from './Theme';
+import theme from './Theme';#update 
 
 const ThemeProvider = ({ children }) => {
   return (
