@@ -33,22 +33,23 @@ function MyAchievements() {
       return;
     }
     
-    try {
-      const response = await fetch(`http://localhost:8080/achievements/${id}`, {
-        method: 'DELETE',
-      });
-      if (response.ok) {
-        alert('Achievement deleted successfully!');
-        setFilteredData(filteredData.filter((progress) => progress.id !== id));
-        setProgressData(progressData.filter((progress) => progress.id !== id));
-      } else {
-        alert('Failed to delete Achievement.');
-      }
-    } catch (error) {
-      console.error('Error deleting Achievement:', error);
+
+  try {
+    const response = await fetch(`http://localhost:8080/achievements/${id}`, {
+      method: 'DELETE',
+    });
+    if (response.ok) {
+      alert('Achievement deleted successfully!');
+      setFilteredData(filteredData.filter((progress) => progress.id !== id));
+      setProgressData(progressData.filter((progress) => progress.id !== id));
+    } else {
       alert('Failed to delete Achievement.');
     }
-  };
+  } catch (error) {
+    console.error('Error deleting Achievement:', error);
+    alert('Failed to delete Achievement.');
+  }
+};
 
   const handleSearch = (e) => {
     const query = e.target.value.toLowerCase();
