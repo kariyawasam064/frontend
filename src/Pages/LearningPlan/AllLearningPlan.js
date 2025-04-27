@@ -75,7 +75,7 @@ function AllLearningPlan() {
   };
 
   const renderPostByTemplate = (post) => {
-    console.log('Rendering post:', post); // Debugging: Log the post object
+    console.log('Rendering post:', post); // Debugging: Log the posS
     if (!post.templateID) { // Use the correct field name
       console.warn('Missing templateID for post:', post); // Warn if templateID is missing
       return <div className="template template-default">Invalid template ID</div>;
