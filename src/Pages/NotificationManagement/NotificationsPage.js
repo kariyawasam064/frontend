@@ -39,34 +39,6 @@ function NotificationsPage() {
     }
   };
 
-  const handleMarkAsRead = async (id) => {
-    try {
-      await axios.put(`http://localhost:8080/notifications/${id}/markAsRead`);
-      setNotifications(notifications.map((n) => (n.id === id ? { ...n, read: true } : n)));
-    } catch (error) {
-      console.error('Error marking notification as read:', error);
-    }
-  };
-
-
-  const handleMarkAsRead = async (id) => {
-    try {
-      await axios.put(`http://localhost:8080/notifications/${id}/markAsRead`);
-      setNotifications(notifications.map((n) => (n.id === id ? { ...n, read: true } : n)));
-    } catch (error) {
-      console.error('Error marking notification as read:', error);
-    }
-  };
-
-  const handleMarkAsRead = async (id) => {
-    try {
-      await axios.put(`http://localhost:8080/notifications/${id}/markAsRead`);
-      setNotifications(notifications.map((n) => (n.id === id ? { ...n, read: true } : n)));
-    } catch (error) {
-      console.error('Error marking notification as read:', error);
-    }
-  };
-
   const handleDelete = async (id) => {
     try {
       await axios.delete(`http://localhost:8080/notifications/${id}`);
@@ -113,6 +85,14 @@ function NotificationsPage() {
                 marginTop: '15px'
               }}>No notifications found.</p>
             </div>
+
+<div className='not_found_img'></div>
+<p className='not_found_msg' style={{
+  color: '#555',
+  fontSize: '18px',
+  marginTop: '15px'
+}}>No notifications found.</p>
+</div>
           ) : (
             <div className="notifications-list">
               {notifications.map((notification) => (
