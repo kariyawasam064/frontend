@@ -15,7 +15,7 @@ const GlassCard = ({ children, elevation = 0, sx = {} }) => {
         sx={{
           p: { xs: 3, sm: 5 },
           borderRadius: 8,
-          backdropFilter: 'blur(25px) saturate(200%)',
+          backdropFilter: 'blur(25px) saturate(200%)',#change pixels
           backgroundColor: 'rgba(255, 255, 255, 0.2)',
           boxShadow: `
             0 10px 30px 0 rgba(31, 38, 135, 0.1),
