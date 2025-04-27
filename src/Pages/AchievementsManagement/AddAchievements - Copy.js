@@ -90,9 +90,12 @@ function AddAchievements() {
       return;
     }
 
+ 
+
     const submitButton = document.getElementById('submit-button');
     submitButton.disabled = true;
     submitButton.innerText = 'Adding Achievement...';
+
 
     try {
       const imageFormData = new FormData();
