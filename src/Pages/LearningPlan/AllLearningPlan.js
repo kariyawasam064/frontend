@@ -27,7 +27,7 @@ function AllLearningPlan() {
     };
 
     fetchPosts();
-  }, []); // Ensure this 
+  }, []); // Ensure 
 
   const getEmbedURL = (url) => {
     try {
