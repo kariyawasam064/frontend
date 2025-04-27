@@ -329,7 +329,7 @@ function UpdateAchievements() {
                 fontSize: '16px', 
                 boxShadow: 'inset 0 2px 4px rgba(0, 0, 0, 0.1)' 
               }}
-            >
+              >
               <option value="" disabled>Select a category</option>
               <option value="Portrait Photography">Portrait Photography</option>
               <option value="Landscape Photography">Landscape Photography</option>
