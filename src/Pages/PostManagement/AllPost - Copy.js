@@ -18,6 +18,8 @@ import { Box } from '@mui/material';
 import './AllPost.css';
 import SearchBar from '../../Components/SearchBar/SearchBar';
 Modal.setAppElement('#root');
+import SearchBar from '../../Components/SearchBar/SearchBar';
+Modal.setAppElement('#root');
 
 function AllPost() {
   const [posts, setPosts] = useState([]);
