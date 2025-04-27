@@ -48,6 +48,15 @@ function NotificationsPage() {
     }
   };
 
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`http://localhost:8080/notifications/${id}`);
+      setNotifications(notifications.filter((n) => n.id !== id));
+    } catch (error) {
+      console.error('Error deleting notification:', error);
+    }
+  };
+
   return (
     <GlassLayout maxWidth="lg" backgroundGradient="135deg, rgba(65, 105, 225, 0.1), rgba(219, 112, 147, 0.2)">
       <Box sx={{ position: 'relative', zIndex: 2, marginTop: '60px' }}>
