@@ -31,7 +31,7 @@ function AddAchievements() {
   }, []);
 
   const handleImageChange = (e) => {
-    const file = e.target.files[0];
+    const file = e.target.files[0];//
     processImageFile(file);
   };
 
