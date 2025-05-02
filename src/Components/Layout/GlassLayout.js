@@ -3,7 +3,7 @@ import { Box, Container, CssBaseline, ThemeProvider } from '@mui/material';
 import { motion } from 'framer-motion';
 import theme from '../../theme/Theme';
 // Remove NavBar import to break the circular dependency
-// and import it dynamically inside the component
+// and import it dynamically inside component
 
 const GlassLayout = ({ children, maxWidth = 'md', backgroundGradient = '135deg, #667eea 0%, #764ba2 100%',hideNavbar ,topMargin='0'}) => {
   // Lazy import NavBar using React.lazy to break the circular dependency
