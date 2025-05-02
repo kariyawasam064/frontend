@@ -90,7 +90,7 @@ function NavBar() {
                                 className={`nav_nav_item ${currentPath === '/allLearningPlan' ? 'nav_nav_item_active' : ''}`}
                                 onClick={() => (window.location.href = '/allLearningPlan')}
                             >
-                                <FaRoad className="nav_link_icon" /> Learning Plan
+                                <FaRoad className="nav_link_icon" /> Learning Plan  
                             </p>
                             <p
                                 className={`nav_nav_item ${currentPath === '/allAchievements' ? 'nav_nav_item_active' : ''}`}
