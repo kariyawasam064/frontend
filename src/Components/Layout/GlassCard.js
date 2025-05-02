@@ -35,7 +35,7 @@ const GlassCard = ({ children, elevation = 0, sx = {} }) => {
           },
           '&::before': {
             content: '""',
-            position: 'absolute',
+            position: 'absolute',//add
             top: 0,
             left: 0,
             width: '100%',
