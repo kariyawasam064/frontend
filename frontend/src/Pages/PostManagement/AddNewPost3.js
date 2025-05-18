@@ -19,6 +19,10 @@ function AddNewPost() {
     const files = Array.from(e.target.files);
     processMediaFiles(files);
   };
+ const handleMediaChange = (e) => {
+    const files = Array.from(e.target.files);
+    processMediaFiles(files);
+  };
 
   const processMediaFiles = (files) => {
     const maxFileSize = 50 * 1024 * 1024; // 50MB
