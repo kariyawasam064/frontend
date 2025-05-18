@@ -3,6 +3,8 @@ import axios from 'axios';
 import './AddNewPost.css'; // Make sure to include the CSS file
 import GlassLayout from '../../Components/Layout/GlassLayout';
 import { Box } from '@mui/material';
+import GlassLayout from '../../Components/Layout/GlassLayout';
+import { Box } from '@mui/material';
 
 function AddNewPost() {
   const [title, setTitle] = useState('');
