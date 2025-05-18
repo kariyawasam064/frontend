@@ -130,6 +130,15 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.follow-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background: #2196f3;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
 .follow-btn.following {
   background: #e0e0e0;
