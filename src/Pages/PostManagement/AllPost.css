@@ -91,6 +91,8 @@
   transform: translateY(-4px);
 }
 
+/*Post header*/
+
 .post-header {
   display: flex;
   justify-content: space-between;
