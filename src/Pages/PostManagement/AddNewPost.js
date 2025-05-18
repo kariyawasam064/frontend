@@ -17,6 +17,21 @@ function AddNewPost() {
     const files = Array.from(e.target.files);
     processMediaFiles(files);
   };
+
+  
+function AddNewPost() {
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+  const [media, setMedia] = useState([]);
+  const [mediaPreviews, setMediaPreviews] = useState([]);
+  const [categories, setCategories] = useState('');
+  const [isDragging, setIsDragging] = useState(false);
+  const userID = localStorage.getItem('userID');
+
+  const handleMediaChange = (e) => {
+    const files = Array.from(e.target.files);
+    processMediaFiles(files);
+  };
   
 
   const processMediaFiles = (files) => {
@@ -70,8 +85,6 @@ function AddNewPost() {
     setMedia([...media, ...files]);
     setMediaPreviews([...mediaPreviews, ...previews]);
   };
-
-//Remove media
 
   const removeMedia = (index) => {
     const updatedMedia = [...media];
