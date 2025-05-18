@@ -18,7 +18,15 @@
   align-items: center;
   gap: 20px;
 }
-
+.search-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 .search-input {
   flex: 1;
   padding: 12px 20px;
