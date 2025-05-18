@@ -151,6 +151,23 @@ function AllPost() {
       console.error('Error liking post:', error);
     }
   };
+   const handleDelete1 = async (postId) => {
+    const confirmDelete = window.confirm('Are you sure you want to delete this post?');
+    if (!confirmDelete) {
+      return; // Exit if the user cancels the confirmation
+    }
+
+    try {
+      await axios.delete(`http://localhost:8080/posts/${postId}`);
+      alert('Post deleted successfully!');
+      setPosts(posts.filter((post) => post.id !== postId)); // Remove the deleted post from the UI
+      setFilteredPosts(filteredPosts.filter((post) => post.id !== postId)); // Update filtered posts
+    } catch (error) {
+      console.error('Error deleting post:', error);
+      alert('Failed to delete post.');
+    }
+  };
+
 
   const handleFollowToggle = async (postOwnerID) => {
     const userID = localStorage.getItem('userID');
