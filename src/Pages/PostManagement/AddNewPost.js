@@ -17,11 +17,7 @@ function AddNewPost() {
     const files = Array.from(e.target.files);
     processMediaFiles(files);
   };
-
-  const handleMediaChange = (e) => {
-    const files = Array.from(e.target.files);
-    processMediaFiles(files);
-  };
+  
 
   const processMediaFiles = (files) => {
     const maxFileSize = 50 * 1024 * 1024; // 50MB
@@ -74,6 +70,8 @@ function AddNewPost() {
     setMedia([...media, ...files]);
     setMediaPreviews([...mediaPreviews, ...previews]);
   };
+
+//Remove media
 
   const removeMedia = (index) => {
     const updatedMedia = [...media];
