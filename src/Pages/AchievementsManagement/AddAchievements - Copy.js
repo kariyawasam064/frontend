@@ -124,6 +124,17 @@ function AddAchievements() {
       submitButton.disabled = false;
       submitButton.innerText = 'Add Achievement';
     }
+  };     if (response.ok) {
+        alert('Achievement added successfully!');
+        window.location.href = '/myAchievements';
+      } else {
+        throw new Error('Failed to add Achievement');
+      }
+    } catch (error) {
+      alert('Failed to add Achievement. Please try again.');
+      submitButton.disabled = false;
+      submitButton.innerText = 'Add Achievement';
+    }
   };
 
   return (
