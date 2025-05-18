@@ -71,7 +71,15 @@ function AddNewPost() {
       alert('You can upload only 1 video.');
       return;
     }
+if (imageCount > 3) {
+      alert('You can upload a maximum of 3 images.');
+      return;
+    }
 
+    if (videoCount > 1) {
+      alert('You can upload only 1 video.');
+      return;
+    }
     setMedia([...media, ...files]);
     setMediaPreviews([...mediaPreviews, ...previews]);
   };
