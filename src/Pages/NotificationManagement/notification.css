@@ -4,6 +4,14 @@
   color: #000;
   text-transform: capitalize;
 }
+
+.noty_topic {
+  font-size: 22px;
+  font-weight: 500;
+  color: #000;
+  text-transform: capitalize;
+}
+
 .noty_time {
   font-size: 14px;
   font-weight: 400;
